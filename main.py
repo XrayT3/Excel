@@ -5,7 +5,7 @@ import datetime
 
 
 def get_cells():
-    url = 'https://docs.google.com/spreadsheets/d/1ssZntNijZKgOfa2b3jAgOyaDIet9sya1iFmF1Hgir0M/export?format=xlsx&id=1ssZntNijZKgOfa2b3jAgOyaDIet9sya1iFmF1Hgir0M'
+    url = ''
     urllib.request.urlretrieve(url, 'file.xlsx')
     rb = xlrd.open_workbook('file.xlsx')
     sheet = rb.sheet_by_index(4)
@@ -49,8 +49,7 @@ def handle_text(message):
     if message.text == '/start':
         bot.send_message(user_id, 'Бот работает')
 
-#uid = -1001059150210
-uid = -1001171404888
+uid = 
 
 
 sended = True
